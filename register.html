@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register — New Heights Aquatics</title>
+  <meta name="description" content="Register for group lessons, private lessons, special needs lessons, or adult lap swim at New Heights Aquatics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="New Heights Aquatics home">
+        <span class="logo-nh">NHA</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="group-lessons.html">Group Lessons</a></li>
+        <li><a href="private-lessons.html">Private &amp; Special Needs</a></li>
+        <li><a href="lap-swim.html">Lap Swim</a></li>
+        <li><a class="btn btn-primary nav-cta" href="register.html">Register</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <div class="crumbs"><a href="index.html">Home</a> / Register</div>
+      <span class="eyebrow">Register</span>
+      <h1>Pick a program. Pick a time. Swim.</h1>
+      <p class="lead">Every program lives in one place — from toddler group lessons to adult lap swim. Select your program, choose a date and time, fill out the form, and you're in.</p>
+    </div>
+  </section>
+
+  <!-- REGISTRATION / SCHEDULER -->
+  <section class="section" id="register" style="background: var(--bg-soft);">
+    <div class="container">
+
+      <div class="panel square-embed">
+        <!-- Square Appointments booking widget -->
+        <!-- Start Square Appointments Embed Code -->
+        <script src='https://app.squareup.com/appointments/buyer/widget/075737vezs8acy/L7SY61TRAWE9Z.js'></script>
+        <!-- End Square Appointments Embed Code -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand">
+          <span class="logo-nh">NHA</span>
+        </div>
+        <p style="margin-top:14px;max-width:320px;">Helping swimmers of every age and ability find their confidence, stroke by stroke.</p>
+      </div>
+      <div>
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="group-lessons.html">Group Lessons</a></li>
+          <li><a href="private-lessons.html">Private Lessons</a></li>
+          <li><a href="register.html?program=special-45">Special Needs</a></li>
+          <li><a href="lap-swim.html">Adult Lap Swim</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul><li>123 Wave Way</li><li>Suite 200</li><li>Mon–Sat</li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@newheightsaquatics.com">hello@newheightsaquatics.com</a></li>
+          <li><a href="tel:+15550123">(555) 012-SWIM</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">© <span id="year"></span> New Heights Aquatics. All rights reserved.</div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
+</body>
+</html>
